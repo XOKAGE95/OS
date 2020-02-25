@@ -15,7 +15,9 @@ int main()
 {
     //printf("%-20s","Enter B, A, C\n");
     double A,C;
-    int B;
-    scanf(" %ld %lf %lf", &B, &A, &C);
+    unsigned int B;
+    scanf("%u %lf %lf", &B, &A, &C);
+    while (A < 0)
+    	scanf("%lf", &A);
     printf("%lf", Summa(A, B, C));
 }
